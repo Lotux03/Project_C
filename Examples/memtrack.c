@@ -26,3 +26,15 @@ void my_free(void* data) {
     printf("Freed bytes at %p\n", data);
     free(data);
 }
+
+// Memory Tracker For memcpy
+void* my_memcpy(void* dest, const void* src, size_t n)
+{
+    // call the real memcpy
+    void* result = memcpy(dest, src, n);
+
+    // log the copy
+    printf("Copied %zu bytes from %p to %p\n", n, src, dest);
+
+    return result;
+}

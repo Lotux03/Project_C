@@ -8,5 +8,6 @@
 void print_help();
 int shell();
 void create_vector(void);
+void example_main();
 
 #endif
