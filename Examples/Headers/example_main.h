@@ -6,6 +6,6 @@
 #include <stddef.h>
 #include "shell.h"
 
-void example_main();
+void example();
 
 #endif

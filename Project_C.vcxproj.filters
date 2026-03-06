@@ -36,30 +36,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="shell.c">
-      <Filter>Source Files\Shell</Filter>
-    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="printdata.c">
-      <Filter>Source Files\Helpers</Filter>
+    <ClCompile Include="Examples\example_main.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="memtrack.c">
+    <ClCompile Include="Examples\memtrack.c">
       <Filter>Source Files\MemoryTracker</Filter>
     </ClCompile>
-    <ClCompile Include="vector.c">
+    <ClCompile Include="Examples\printdata.c">
       <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\shell.c">
+      <Filter>Source Files\Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\vector.c">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorLib\vector_lib.c">
+      <Filter>Source Files\DynamicArray</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="memtrack.h">
+    <ClInclude Include="Examples\Headers\memtrack.h">
       <Filter>Header Files\MemoryTracker</Filter>
     </ClInclude>
-    <ClInclude Include="shell.h">
+    <ClInclude Include="Examples\Headers\shell.h">
       <Filter>Header Files\Shell</Filter>
     </ClInclude>
-    <ClInclude Include="vector.h">
+    <ClInclude Include="Examples\Headers\vector.h">
+      <Filter>Header Files\DynamicArray</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorLib\vector_lib.h">
       <Filter>Header Files\DynamicArray</Filter>
     </ClInclude>
   </ItemGroup>

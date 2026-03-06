@@ -4,15 +4,21 @@
 #include <time.h>
 #include "memtrack.h"
 
+typedef struct {
+    void* data;
+    size_t size;
+    size_t cap;
+    size_t elem_size;
+} Array;
 
-void init(Array* arr, size_t elem_size, int initSize) {
+void array_init(Array* arr, size_t elem_size, int initSize) {
     arr->elem_size = elem_size;
     arr->data = my_malloc(elem_size * initSize);
     arr->size = 0;
     arr->cap = initSize;
 }
 
-void push_back(Array* arr, void* content) {
+void array_push_back(Array* arr, void* content) {
     if (arr->size == arr->cap) {
         void* temp = my_realloc(arr->data, (arr->elem_size * arr->cap * 2));
         if (!temp) {
@@ -30,7 +36,7 @@ void push_back(Array* arr, void* content) {
     arr->size++;
 }
 
-void free_array(Array* arr) {
+void array_free(Array* arr) {
     my_free(arr->data);
     arr->data = NULL;
     arr->size = 0;

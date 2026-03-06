@@ -2,6 +2,6 @@
 #include <stdlib.h>
 #include "shell.h"
 
-void example_main() {
+void example() {
 	shell();
 }
