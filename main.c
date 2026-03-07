@@ -5,6 +5,9 @@
 #include <windows.h>
 #include <tlhelp32.h>
 
+// most of this is just slop
+// but some good code is in here to0 (made by me)
+
 // Version string intentionally inlined to avoid symbol/macro conflicts with system headers
 // "v1.1.0"
 
