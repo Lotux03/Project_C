@@ -60,7 +60,7 @@ void shell_vec1() {
             printf("Size: %d\n", size(&vec1));
         }
         else if (strcmp(input, "capacity") == 0) {
-            printf("Capacity: %d\n", capacity(&vec1));
+            printf("Capacity: %zd\n", capacity(&vec1));
         }
         else if (strcmp(input, "print") == 0) {
             print_vector(&vec1);
