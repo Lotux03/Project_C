@@ -13,63 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\DynamicArray">
-      <UniqueIdentifier>{3e7c3fb2-2d4a-4053-b30d-1a0f828f349e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\DynamicArray">
-      <UniqueIdentifier>{ab96bff6-9fed-4d5b-83ee-f4665059f4e6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\MemoryTracker">
-      <UniqueIdentifier>{aaff228c-dad9-4ce3-89d1-4984a3035788}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Helpers">
-      <UniqueIdentifier>{9f5d43b6-1af1-4487-94d2-b5fdfeffc57b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\MemoryTracker">
-      <UniqueIdentifier>{5a061aea-bd47-48cb-aaa3-450553dc52c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Shell">
-      <UniqueIdentifier>{dea6d45b-acf8-4d9f-8930-bb7b75d46b7d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Shell">
-      <UniqueIdentifier>{3db6c7c8-7b4d-47fe-b5c2-4690b8744193}</UniqueIdentifier>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{4c052384-78b6-49a1-8d49-66bc07daf16f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Helpers\memory_scanner.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win.c">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="buttons.c">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="button_handler.c">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Examples\example_main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Examples\memtrack.c">
-      <Filter>Source Files\MemoryTracker</Filter>
-    </ClCompile>
-    <ClCompile Include="Examples\printdata.c">
-      <Filter>Source Files\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="Examples\shell.c">
-      <Filter>Source Files\Shell</Filter>
-    </ClCompile>
-    <ClCompile Include="Examples\vector.c">
-      <Filter>Source Files\Helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="VectorLib\vector_lib.c">
-      <Filter>Source Files\DynamicArray</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\Headers\memtrack.h">
-      <Filter>Header Files\MemoryTracker</Filter>
+    <ClInclude Include="Headers\memory_scanner.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Examples\Headers\shell.h">
-      <Filter>Header Files\Shell</Filter>
+    <ClInclude Include="win.h">
+      <Filter>Source Files\GUI</Filter>
     </ClInclude>
-    <ClInclude Include="Examples\Headers\vector.h">
-      <Filter>Header Files\DynamicArray</Filter>
+    <ClInclude Include="button_handler.h">
+      <Filter>Source Files\GUI</Filter>
     </ClInclude>
-    <ClInclude Include="VectorLib\vector_lib.h">
-      <Filter>Header Files\DynamicArray</Filter>
+    <ClInclude Include="buttons.h">
+      <Filter>Source Files\GUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -107,11 +107,13 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>Examples\Headers;VectorLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Hella\source\repos\Project_C\Librarys\cimgui;C:\Users\Hella\source\repos\Project_C\Librarys\imgui;C:\Users\Hella\source\repos\Project_C;Examples\Headers;VectorLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Hella\source\repos\Project_C\SDL3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -131,18 +133,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="buttons.c" />
+    <ClCompile Include="button_handler.c" />
+    <ClCompile Include="Helpers\memory_scanner.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="Examples\example_main.c" />
-    <ClCompile Include="Examples\memtrack.c" />
-    <ClCompile Include="Examples\printdata.c" />
-    <ClCompile Include="Examples\shell.c" />
-    <ClCompile Include="Examples\vector.c" />
-    <ClCompile Include="VectorLib\vector_lib.c" />
+    <ClCompile Include="win.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\Headers\memtrack.h" />
-    <ClInclude Include="Examples\Headers\shell.h" />
-    <ClInclude Include="Examples\Headers\vector.h" />
+    <ClInclude Include="buttons.h" />
+    <ClInclude Include="button_handler.h" />
+    <ClInclude Include="Headers\memory_scanner.h" />
+    <ClInclude Include="win.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
